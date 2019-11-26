@@ -1,0 +1,99 @@
+##################### For backend ##########################
+/autheg-backend/*.rbc
+/autheg-backend/capybara-*.html
+/autheg-backend/.rspec
+/autheg-backend/db/*.sqlite3
+/autheg-backend/db/*.sqlite3-journal
+/autheg-backend/db/*.sqlite3-[0-9]*
+/autheg-backend/public/system
+/autheg-backend/coverage/
+/autheg-backend/spec/tmp
+/autheg-backend/*.orig
+/autheg-backend/rerun.txt
+/autheg-backend/pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+/autheg-backend/log/*
+/autheg-backend/tmp/*
+!/autheg-backend/log/.keep
+!/autheg-backend/tmp/.keep
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+/autheg-backend/config/initializers/secret_token.rb
+/autheg-backend/config/master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+/autheg-backend/.env
+
+## Environment normalization:
+/autheg-backend/.bundle
+/autheg-backend/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+/autheg-backend/.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/autheg-backend/vendor/assets/bower_components
+/autheg-backend/*.bowerrc
+/autheg-backend/bower.json
+
+# Ignore pow environment settings
+/autheg-backend/.powenv
+
+# Ignore Byebug command history file.
+/autheg-backend/.byebug_history
+
+# Ignore node_modules
+/autheg-backend/node_modules/
+
+# Ignore precompiled javascript packs
+/autheg-backend/public/packs
+/autheg-backend/public/packs-test
+/autheg-backend/public/assets
+
+# Ignore yarn files
+/autheg-backend/yarn-error.log
+/autheg-backend/yarn-debug.log*
+/autheg-backend/.yarn-integrity
+
+# Ignore uploaded files in development
+/autheg-backend/storage/*
+!/autheg-backend/storage/.keep
+
+
+
+##################### For frontend ##########################
+
+# dependencies
+autheg-frontend/node_modules
+autheg-frontend/package-lock.json
+
+# logs
+autheg-frontend/npm-debug.log
+autheg-frontend/yarn-error.log
+
+# other
+autheg-frontend/.nuxt
+autheg-frontend/dist
+autheg-frontend/.vscode
+autheg-frontend/.idea
+autheg-frontend/newrelic_agent.log
+autheg-frontend/.DS_STORE
+.eslintrc
+
+# docs
+/autheg-frontend/docs
+
+# @nuxtjs/pwa
+autheg-frontend/sw.*
+
+
+
+
